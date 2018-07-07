@@ -9,6 +9,14 @@
          </div>
         <p>Two characters, without descriptions, I dive into them and just write and write and write, and let that define their relationship and their attributes.</p>
         <p>two shapeshifters, <br>dancing around another, <br>two ghosts and shadows<br> melting in and out of each other.</p>
+                {% for post in posts %}
+                    <div>
+                        <p>published: {{ post.published_date }}</p>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+        </div>
     </body>
     
 </html>
