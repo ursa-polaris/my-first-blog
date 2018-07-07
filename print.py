@@ -1,0 +1,1 @@
+print("I adore you. Then we fade away.")
